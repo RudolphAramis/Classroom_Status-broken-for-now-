@@ -4,6 +4,7 @@
 //Day 4: Set up the status monitor for the numbers, made the buttons take up space.
 //Day IDK: Set up a pause/resume button and got it working.
 //Day IDK +1: added a +/- time button.
+//Day X: This is now a living document. I will no longer record daily changes. Old days will be kept on here since I am sentimental.
 //Known bugs: pressing the pause button with no time causes NaN to be displayed everywhere. <- This one fixed itself somehow. Timer goes into negative numbers for a second when it is finished. Pausing the timer and adding time will not display the change.
 // Page setup
 let clock = document.getElementById("time");
@@ -32,7 +33,7 @@ pauseButton.addEventListener('click', function(){pauseStatus += 1;
 let addMinute = document.getElementById("addMinute");
 let minusMinute = document.getElementById("minusMinute");
 addMinute.addEventListener('click', function(){timerMinutes += 1; timerSeconds +=60;});
-minusMinute.addEventListener('click', function(){timerMinutes -= 1; timerSeconds -=60;})
+minusMinute.addEventListener('click', function(){timerMinutes -= 1; timerSeconds -=60;});
 
 
 // Creates a loop that puts all of the time buttons in an array and gives them a listener
@@ -101,4 +102,21 @@ function turnRed(lineNumber){
     lineNumber.target.addEventListener('click', turnBlue);
 }
 
+// Declaring the initial number of students
+let numberStudents = 22;
 
+// Creates button to add student
+let addStudentButton = document.getElementById('addStudent');
+addStudentButton.addEventListener('click',addStudent);
+
+// Button to increase the number of students
+let statusContainer = document.querySelector('.statusContainer');
+
+function addStudent(){
+    const newStudent = document.createElement('div');
+    newStudent.textContent = numberStudents + 1;
+    newStudent.classList.add('status');
+    statusContainer.append(newStudent);
+    newStudent.addEventListener('click', turnBlue);
+    numberStudents += 1;
+    }
