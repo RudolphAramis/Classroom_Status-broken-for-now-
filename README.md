@@ -23,5 +23,8 @@ Reception:
 minimal reminders were needed to have students press their buttons-- only the initial introduction and a single "please remember to update your status" were needed. This made keeping
 track of student work much easier, which led to a decline in graded work backlogs.
 
+Changelog:
+v.1.2.1: Added a "add student button"
+
 Future implementations:
-  Currently, it is planned to add a feature that allows teachers/users to add/remove the number of students to accommodate classroom size. For additional suggestions, please contact Rudy :)
+  Currently, it is planned to add a feature that allows teachers/users to remove the number of students to accommodate classroom size. For additional suggestions, please contact Rudy :)
