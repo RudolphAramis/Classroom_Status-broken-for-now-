@@ -110,6 +110,10 @@ let numberStudents = 22;
 let addStudentButton = document.getElementById('addStudent');
 addStudentButton.addEventListener('click',addStudent);
 
+// Creates button to remove student
+let removeStudentButton = document.getElementById('removeStudent');
+removeStudentButton.addEventListener('click',removeStudent);
+
 // Button to increase the number of students
 let statusContainer = document.querySelector('.statusContainer');
 
@@ -121,3 +125,13 @@ function addStudent(){
     newStudent.addEventListener('click', turnBlue);
     numberStudents += 1;
     }
+// Button to decrease the number of students
+function removeStudent(){
+    const removedStudent = statusContainer.lastElementChild;
+    if (removedStudent == null){
+        return;
+    } else {
+    statusContainer.removeChild(removedStudent);
+    numberStudents -= 1;
+    }
+}

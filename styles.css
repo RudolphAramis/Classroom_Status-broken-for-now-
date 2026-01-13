@@ -93,3 +93,10 @@ button {
 #fiveMinutes{
     border-radius: 0 20px 20px 0;
 }
+
+#addStudent{
+    border-radius: 20px 0 0 20px;
+}
+#removeStudent{
+    border-radius: 0 20px 20px 0;
+}
