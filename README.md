@@ -28,6 +28,7 @@ v.1.2.1: Added a "add student button"
 v.1.2.2: Made the webpage nicer to look at.
 v.1.2.3: Added a "remove student button"
 v.1.2.4: A lot of bug fixes (this also broke the readme?)
+v.1.3.0: You can now click on the color/status messages to change the text. I don't know what the DS_storage file is and I can't figure out how to delete it.
 
 Future implementations:
   Currently, I am looking into the possibility of customization options, including user presets. Please be patient as I learn how to work with databases. I am a teacher. For additional suggestions, please contact Rudy :)
