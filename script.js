@@ -1,5 +1,6 @@
 
 //Day X: This is now a living document. I will no longer record daily changes. GitHub pages broke this, and support didn't help me, so I am having to look into what I can do about this.
+//for some reason I can't stage or push changes.
 // Page setup
 let clock = document.getElementById("time");
 let clock2 = document.getElementById("timeMinutes");
