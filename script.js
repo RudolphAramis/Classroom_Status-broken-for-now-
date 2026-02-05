@@ -117,7 +117,7 @@ addStudentButton.addEventListener('click',addStudent);
 let removeStudentButton = document.getElementById('removeStudent');
 removeStudentButton.addEventListener('click',removeStudent);
 
-// Button to increase the number of students
+// Button to increase the number of students, modified to include the status border colors
 let statusContainer = document.querySelector('.statusContainer');
 
 function addStudent(){
@@ -127,6 +127,7 @@ function addStudent(){
     statusContainer.append(newStudent);
     newStudent.addEventListener('click', turnBlue);
     numberStudents += 1;
+    changeTheme();
     }
 // Button to decrease the number of students
 function removeStudent(){
@@ -181,24 +182,49 @@ function changeTheme(){
 function applyDefaultTheme(){
     document.body.style.backgroundColor = "#75cfc9";
     document.body.style.color = "#000000";
+    const statuses = document.getElementsByClassName("status");
+    for (let lineNumber of statuses){
+        lineNumber.style.borderColor = "#ffffff";
+
+    }
 }
 
 function applyQuietEveningTheme(){
     document.body.style.backgroundColor = "#4a3e5f";
-    document.body.style.color = "#FFFFFF";
+    document.body.style.color = "#dad2b7";
+    const statuses = document.getElementsByClassName("status");
+    for (let lineNumber of statuses){
+        lineNumber.style.borderColor = "#dad2b7";
+
+    }
 }
 
 function applyVelvetRoseTheme(){
     document.body.style.backgroundColor = "#820808";
     document.body.style.color = "#FFFFFF";
+    const statuses = document.getElementsByClassName("status");
+    for (let lineNumber of statuses){
+        lineNumber.style.borderColor = "#D4AF37";
+
+    }
 }
 
 function applyFirstStarsTheme(){
     document.body.style.backgroundColor = "#2d326e";
     document.body.style.color = "#FFFFFF";
+    const statuses = document.getElementsByClassName("status");
+    for (let lineNumber of statuses){
+        lineNumber.style.borderColor = "#ffffff"
+
+    }
 }
 
 function applyCamelliaTheme(){
     document.body.style.backgroundColor = "#fb9ed6";
-    document.body.style.color = "#000000";
+    document.body.style.color = "#ffffff";
+    const statuses = document.getElementsByClassName("status");
+    for (let lineNumber of statuses){
+        lineNumber.style.borderColor = "#ffffff";
+
+    }
 }
